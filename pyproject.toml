@@ -1,0 +1,15 @@
+[project]
+name = "packet-flow-final-entry"
+version = "1.0.0"
+description = "Rebuilds our final entry to the Application Inference from Packet Flows challenge from saved model predictions"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.11"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
